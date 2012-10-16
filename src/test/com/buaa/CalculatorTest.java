@@ -18,13 +18,4 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         calculator.eval("abc");
     }
-
-    @Test
-    public void should_add_two_integer_numbers(){
-        Calculator calculator = new Calculator();
-
-        int result = calculator.eval("3+2");
-
-        Assert.assertEquals(5, result);
-    }
 }
