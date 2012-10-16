@@ -36,4 +36,10 @@ public class CalculatorTest {
         int result = calculator.eval(" 3 + 2 ");
         Assert.assertEquals(5, result);
     }
+
+    @Test
+    public void should_eval_minus() {
+        int result = calculator.eval("12-9");
+        Assert.assertEquals(3, result);
+    }
 }

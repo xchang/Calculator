@@ -10,6 +10,14 @@ public class Calculator {
             int right = Integer.parseInt(strings[1]);
             return left + right;
         }
+
+        if (validString.contains("-")){
+            String[] strings = validString.split("-");
+            int left = Integer.parseInt(strings[0]);
+            int right = Integer.parseInt(strings[1]);
+            return left - right;
+        }
+
         try {
             return Integer.parseInt(validString);
         } catch (NumberFormatException e) {
