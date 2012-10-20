@@ -7,8 +7,10 @@ public class OperatorFactory {
             operator = new Add();
         } else if (validString.contains("-")){
             operator = new Minus();
-        }else if (validString.contains("*")){
+        } else if (validString.contains("*")){
             operator = new Multiply();
+        } else if (validString.contains("/")){
+            operator = new Divide();
         } else {
             operator = new Parser();
         }

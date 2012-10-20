@@ -1,14 +1,15 @@
 package com.buaa;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 public class CalculatorTest {
 
-    private final Calculator calculator;
+    private Calculator calculator;
 
-    public CalculatorTest() {
-
+    @Before
+    public void setup() {
         calculator = new Calculator();
     }
 
@@ -47,5 +48,11 @@ public class CalculatorTest {
     public void should_calculate_multiply_operation() {
         int result = calculator.eval("15*11");
         Assert.assertEquals(165, result);
+    }
+
+    @Test
+    public void should_calculate_divide_operation() {
+        int result = calculator.eval("8/3");
+        Assert.assertEquals(2, result);
     }
 }

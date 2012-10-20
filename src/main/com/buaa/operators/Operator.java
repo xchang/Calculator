@@ -5,8 +5,8 @@ import com.buaa.InvaildArgumentException;
 public abstract class Operator {
     protected int[] parse(String string, String operator) {
         String[] strings = string.split("\\" + operator);
-        int left = Integer.parseInt(strings[0]);
-        int right = Integer.parseInt(strings[1]);
+        int left = parse(strings[0]);
+        int right = parse(strings[1]);
         return new int[] {left, right};
     }
 
