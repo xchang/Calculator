@@ -11,6 +11,8 @@ public class OperatorFactory {
             operator = new Multiply();
         } else if (validString.contains("/")){
             operator = new Divide();
+        } else if (validString.contains("%")){
+            operator = new Mode();
         } else {
             operator = new Parser();
         }

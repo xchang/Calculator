@@ -55,4 +55,10 @@ public class CalculatorTest {
         int result = calculator.eval("8/3");
         Assert.assertEquals(2, result);
     }
+
+    @Test
+    public void should_calculate_mode_operation() {
+        int result = calculator.eval("9%4");
+        Assert.assertEquals(1, result);
+    }
 }
