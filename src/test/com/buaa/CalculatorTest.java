@@ -38,7 +38,7 @@ public class CalculatorTest {
     }
 
     @Test
-    public void should_eval_minus() {
+    public void should_eval_minus_operation() {
         int result = calculator.eval("12-9");
         Assert.assertEquals(3, result);
     }
