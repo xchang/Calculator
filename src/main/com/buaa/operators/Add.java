@@ -1,12 +1,10 @@
 package com.buaa.operators;
 
-public class Add implements IOperator {
+public class Add extends Operator {
 
     @Override
     public int calculate(String string) {
-        String[] strings = string.split("\\+");
-        int left = Integer.parseInt(strings[0]);
-        int right = Integer.parseInt(strings[1]);
-        return left + right;
+        int[] numbers = parse(string, "+");
+        return numbers[0] + numbers[1];
     }
 }

@@ -42,4 +42,10 @@ public class CalculatorTest {
         int result = calculator.eval("12-9");
         Assert.assertEquals(3, result);
     }
+
+    @Test
+    public void should_calculate_multiply_operation() {
+        int result = calculator.eval("15*11");
+        Assert.assertEquals(165, result);
+    }
 }
